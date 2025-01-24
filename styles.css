@@ -41,28 +41,21 @@ nav ul li a {
     text-align: center;
 }
 
-/* Adjusted Image Styles */
+/* Image Styling with 4:3 Aspect Ratio */
 .content img,
 .album img {
-    width: auto; /* Maintain aspect ratio */
-    max-width: 30%; /* Restrict image width to 30% of the container */
-    height: auto;
-    max-height: 400px; /* Maximum height for portrait-like ratio */
-    object-fit: cover;
+    aspect-ratio: 4 / 3; /* Maintain 4:3 ratio */
+    width: 100%; /* Scale to fit container width */
+    max-width: 400px; /* Limit image width */
+    height: auto; /* Keep the aspect ratio intact */
+    object-fit: contain; /* Ensure the full image is visible */
     margin: 20px 0;
+    border-radius: 5px; /* Optional: Rounded corners */
 }
 
 /* Album Section Styles */
 .album {
     margin-bottom: 30px;
-}
-
-.album img {
-    max-width: 30%; /* Images are taller and slimmer */
-    max-height: 400px; /* Ensure portrait-like aspect ratio */
-    margin-bottom: 10px;
-    object-fit: cover;
-    border-radius: 10px; /* Optional: Rounded edges */
 }
 
 .album .button {
@@ -101,5 +94,3 @@ footer a {
     font-weight: bold;
     margin: 0 15px;
 }
-
-
