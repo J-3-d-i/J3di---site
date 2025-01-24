@@ -30,10 +30,6 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -52,18 +48,11 @@ nav ul li a {
     margin: 20px 0;
 }
 
-.album {
-    margin: 30px 0;
-}
-
 .album img {
     width: 30%;
     max-height: 200px;
     object-fit: cover;
-}
-
-.album h3 {
-    margin: 10px 0 5px;
+    margin-bottom: 10px;
 }
 
 .album .button {
@@ -74,12 +63,14 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .album .button:hover {
     background-color: #666;
 }
 
+/* Footer Styling */
 footer {
     background-color: #111;
     color: #fff;
@@ -88,7 +79,7 @@ footer {
 }
 
 footer img {
-    width: 2%; /* Confined size for footer icons */
+    width: 24px; /* Scaled appropriately for all pages */
     height: auto;
     margin: 0 10px;
     vertical-align: middle;
@@ -100,3 +91,4 @@ footer a {
     font-weight: bold;
     margin: 0 15px;
 }
+
