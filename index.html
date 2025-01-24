@@ -4,65 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J3di Official Site</title>
+
+    <!-- Google Fonts for Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
+        /* Global Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            font-weight: 600;
-        }
-        .about {
-            padding: 20px;
-            text-align: center;
-        }
-        .about h2 {
-            font-weight: 600;
+            background-color: #f7f7f7;
             color: #333;
         }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #222;
+        }
+
         .about p {
+            font-size: 1.1rem;
             font-weight: 400;
             color: #555;
+            max-width: 800px;
+            margin: 20px auto;
         }
+
+        /* Music Section */
         .music {
-            padding: 20px;
             background-color: #222;
             color: white;
+            padding: 60px 20px;
+            text-align: center;
         }
+
         .music h2 {
+            font-size: 2.5rem;
             font-weight: 600;
             color: #fff;
         }
+
         .music p {
+            font-size: 1.1rem;
             font-weight: 400;
             color: #ddd;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .music img {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            margin: 30px auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .about h2, .music h2 {
+                font-size: 2rem;
+            }
+            .about p, .music p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
 
+<!-- Header Section -->
 <header>
     <h1>Welcome to the official J3di site</h1>
 </header>
 
-<section class="about">
+<!-- Navigation Bar -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- About Section -->
+<section class="about" id="about">
     <h2>About J3di</h2>
-    <p>J3di is a dynamic artist, blending creativity with freedom and expression to deliver powerful, innovative music that resonates with fans worldwide.</p>
+    <p>J3di is a dynamic artist, blending creativity with freedom and expression to deliver powerful, innovative music that resonates with fans worldwide. With a passion for pushing boundaries and exploring new sonic landscapes, J3di creates music that speaks to the heart and mind.</p>
+    <img src="https://via.placeholder.com/800x400" alt="Artist Image">
 </section>
 
-<section class="music">
+<!-- Music Section -->
+<section class="music" id="music">
     <h2>Latest Tracks</h2>
-    <p>Check out J3di's newest release...</p>
+    <p>Check out J3di's newest release, a track that takes you on a journey through sound and emotion. The music reflects his unique style, combining electronic, rock, and experimental elements.</p>
+    <img src="https://via.placeholder.com/800x400" alt="Track Artwork">
 </section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 J3di. All rights reserved.</p>
+    <p>
+        <a href="https://instagram.com/J3diMusic" target="_blank">Instagram</a>
+        <a href="https://spotify.com/J3diMusic" target="_blank">Spotify</a>
+        <a href="https://youtube.com/J3diMusic" target="_blank">YouTube</a>
+    </p>
+</footer>
 
 </body>
 </html>
