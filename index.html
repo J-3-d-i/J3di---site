@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J3di Official Site</title>
+    <title>J3di - About</title>
 
     <!-- Google Fonts for Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        /* Global Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -18,101 +17,79 @@
             color: #333;
         }
 
-        /* Header */
         header {
-            background-color: #222;
+            background-color: #111;
             color: #fff;
-            padding: 40px;
+            padding: 20px;
             text-align: center;
         }
 
         h1 {
             font-weight: 600;
-            font-size: 3rem;
+            font-size: 2.5rem;
             letter-spacing: 1px;
         }
 
-        /* Navigation Bar */
-        nav {
-            background-color: #111;
-            padding: 15px;
-            text-align: center;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        nav a {
-            color: #fff;
+        nav ul li {
+            display: inline;
             margin: 0 15px;
-            font-weight: 400;
-            text-decoration: none;
-            text-transform: uppercase;
         }
 
-        nav a:hover {
-            border-bottom: 2px solid #fff;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #111;
+        nav ul li a {
             color: #fff;
-            padding: 40px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .back-button:hover {
+            background-color: #666;
+        }
+
+        .content {
+            padding: 40px 20px;
             text-align: center;
         }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        footer .social-icons img {
-            width: 40px;
-            height: 40px;
-            margin: 0 10px;
-            transition: transform 0.3s;
-        }
-
-        footer .social-icons img:hover {
-            transform: scale(1.1);
-        }
-
     </style>
 </head>
 <body>
 
-<!-- Header Section -->
+<!-- Header Section (navigation + title) -->
 <header>
-    <h1>Welcome to the official J3di site</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="merchandise.html">Merchandise</a></li>
+            <li><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+    <h1>About J3di</h1>
 </header>
 
-<!-- Navigation Bar -->
-<nav>
-    <a href="about.html">About</a>
-    <a href="merchandise.html">Merchandise</a>
-    <a href="events.html">Events</a>
-    <a href="mailto:j3dibooking@gmail.com">Contact</a>
-    <li><a href="music.html">Music</a></li> 
-</nav>
+<!-- About Section -->
+<section class="content">
+    <h2>About J3di</h2>
+    <p>Information about the artist J3di goes here...</p>
 
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2025 J3di. All rights reserved.</p>
-    <div class="social-icons">
-        <a href="https://www.instagram.com/j_3_d_i/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        </a>
-        <a href="https://open.spotify.com/album/4jPlH8SKUuHzfqNumbZvdk?flow_ctx=dcf44173-e832-4891-b87f-bce0295b9524%3A1737698885#login" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Spotify_logo_with_text.svg" alt="Spotify">
-        </a>
-        <a href="mailto:j3dibooking@gmail.com">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Google_Contacts_icon.svg" alt="Email">
-        </a>
-    </div>
-</footer>
+    <!-- Back Button -->
+    <a href="index.html" class="back-button">Back to Home</a>
+</section>
 
 </body>
 </html>
