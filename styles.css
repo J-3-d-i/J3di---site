@@ -48,8 +48,12 @@ nav ul li a {
     margin: 20px 0;
 }
 
+.album {
+    margin-bottom: 30px;
+}
+
 .album img {
-    width: 30%;
+    width: 40%; /* Resized for better alignment */
     max-height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
@@ -79,7 +83,7 @@ footer {
 }
 
 footer img {
-    width: 24px; /* Scaled appropriately for all pages */
+    width: 24px; /* Adjusted for smaller, consistent size */
     height: auto;
     margin: 0 10px;
     vertical-align: middle;
