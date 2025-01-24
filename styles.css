@@ -41,22 +41,28 @@ nav ul li a {
     text-align: center;
 }
 
-.content img {
-    width: 50%;
-    max-height: 300px;
+/* Adjusted Image Styles */
+.content img,
+.album img {
+    width: auto; /* Maintain aspect ratio */
+    max-width: 30%; /* Restrict image width to 30% of the container */
+    height: auto;
+    max-height: 400px; /* Maximum height for portrait-like ratio */
     object-fit: cover;
     margin: 20px 0;
 }
 
+/* Album Section Styles */
 .album {
     margin-bottom: 30px;
 }
 
 .album img {
-    width: 40%; /* Resized for better alignment */
-    max-height: 200px;
-    object-fit: cover;
+    max-width: 30%; /* Images are taller and slimmer */
+    max-height: 400px; /* Ensure portrait-like aspect ratio */
     margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 10px; /* Optional: Rounded edges */
 }
 
 .album .button {
